@@ -19,9 +19,9 @@ public class MiPrimerProgramaG8 {
         
         
         
-        ClsBodega bodega = new ClsBodega("BOD12", "BODEGA ARTUROS", 1000, responsable);
+        // ClsBodega bodega = new ClsBodega("BOD12", "BODEGA ARTUROS", 1000, "Bogotá", responsable);
 
-        String codigo = bodega.getNombre();
+       //  String codigo = bodega.getNombre();
         
         ClsProducto producto1 = new ClsProducto("CO1", "Tapabocas desechable", "Tapabocas", "Prevencion", 5000.0);
 
@@ -29,13 +29,15 @@ public class MiPrimerProgramaG8 {
         
         ClsProducto producto3 = new ClsProducto("CO3", "Guantes", "Guantes", "Emergencia", 1000.0);
         
+        
+        /*
         bodega.RegistrarEntrada(producto1);
         bodega.RegistrarEntrada(producto2);  
         bodega.RegistrarEntrada(producto3);
 
         
         System.out.println("El inventario es: \n" + bodega.Mostrarinventario());
-        
+        */
 
     }
 }

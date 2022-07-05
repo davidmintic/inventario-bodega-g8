@@ -12,16 +12,18 @@ public class ClsBodega {
     private String codigo;  // null
     private String nombre;
     private int capacidad; // 0
+    private String ciudad;
 
     private LinkedList<ClsProducto> listaProductos;
     private ClsResponsable responsable;
 
-    public ClsBodega(String codigo, String nombre, int capacidad, ClsResponsable responsable) {
+    public ClsBodega(String codigo, String nombre, int capacidad, String ciudad) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.capacidad = capacidad;
+        this.ciudad = ciudad;
         this.listaProductos = new LinkedList<>();
-        this.responsable = responsable;
+        //this.responsable = responsable;
     }
     
     
@@ -69,6 +71,8 @@ public class ClsBodega {
     
     
     
+    
+    
 
     public void RegistrarEntrada(ClsProducto producto) {
 
@@ -88,6 +92,14 @@ public class ClsBodega {
 
         return inventario;
 
+    }
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
     }
 
 }
